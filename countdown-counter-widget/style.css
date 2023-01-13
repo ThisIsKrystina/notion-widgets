@@ -1,0 +1,109 @@
+// reset UL/OLs
+.delist {
+  list-style:none;
+}
+.delist, 
+.delist li {
+  margin:0; padding:0;
+}
+
+  //counter styles
+.counter-widget {
+	border: 1px solid #333;
+	
+  // set width for example but normally would be within a container so not needed
+    max-width: 200px;
+    margin: 40px auto;
+  
+	.inner {
+		padding: 1em 1em 0.5em;
+		min-height: 100px;
+	}
+	input {
+		border: none;
+		text-align: center;
+		color: #666;
+		font-size: 48px;
+		padding: 0;
+     max-width:100%;
+     box-sizing: border-box;
+     text-align: center;
+      &:focus {
+        outline:none;
+        color:#222;
+      }
+	}
+	label {
+		font-size: 16px;
+		text-align: center;
+		color: #666;
+		display: block;
+		margin: 0px; padding: 0;
+		span {
+			display: block;
+			color: #666;
+		}
+	}
+}
+
+.button-set {
+	overflow: hidden;
+	border-top: 1px solid #333;
+	li {
+		width: 50%;
+     float:left;
+     box-sizing: border-box;
+		background: #f3f2f2;
+		border-right: 1px solid #333;
+		&:last-of-type {
+			border-right: none;
+		}
+	}
+	a {
+		display: block;
+		padding: 0.25em 1em;
+		font-size: 30px;
+		text-align: center;
+     text-decoration:none;
+     color:#444;
+		&:hover {
+			background: #fff;
+			color: #333;
+		}
+	}
+}
+
+
+  //horizontal adaptations
+.counter-widget--horizontal {
+	max-width: 205px;
+	margin-bottom: 0;
+
+	.button-set {
+		border-top: 0;
+		border-left: 1px solid #333;
+		width: 66.66%;
+		box-sizing: border-box;
+		li {
+			
+		}
+		a {
+			font-size: 20px;
+		}
+	}
+	input, li {
+		float: left;
+	}
+	input {
+		width: 33.33%;
+		box-shadow: inset 0 2px 3px rgba(0,0,0,.10);
+    border:none;
+	}
+	li {
+		width: 50%;
+	}
+	input, a {
+		font-size: 20px;
+		padding: 0.5em 1em;
+	}
+}
